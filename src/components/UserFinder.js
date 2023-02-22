@@ -33,12 +33,12 @@ class UserFinder extends Component {
   }
   render() {
     return (
-      <>
+      <Fragment>
         <div className={classes.finder}>
           <input type="search" onChange={this.searchChangeHandler.bind(this)} />
         </div>
         <Users users={this.state.filteredUsers} />
-      </>
+      </Fragment>
     );
   }
 }
